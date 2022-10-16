@@ -31,11 +31,10 @@ async def menu_action(message: Message):
     Вывод меню
     """
     logger.info(f'{message.from_user.id} call for menu')
-    await message.answer(
-        text='Я могу преобразовать голос в текст.\n'
-             'Просто отправь мне голосовое сообщение!',
-        reply_markup=start_menu
-    )
+    await message.answer(text='Я могу преобразовать голос в текст.\n'
+                              'Просто отправь мне голосовое сообщение!',
+                         reply_markup=start_menu
+                         )
 
     await Voice2Text.wait_voice.set()
 

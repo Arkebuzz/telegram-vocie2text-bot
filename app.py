@@ -25,11 +25,10 @@ if __name__ == '__main__':
         with open('data/data.txt', 'w') as f:
             f.write('0')
 
-    from utils import sound_to_text as s2t
-
-    from utils.logger import logger
-    from loader import dp
     from bot_commands.bot_commands import set_default_commands
+    from loader import dp
+    from utils import sound_to_text as s2t
+    from utils.logger import logger
 
     v2t = mp.Process(target=s2t.main)
     v2t.start()

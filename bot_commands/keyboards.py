@@ -36,7 +36,7 @@ async def statistics_action(call: CallbackQuery):
     logger.info(f'{call.from_user.id} call for how work')
 
     await dp.bot.send_message(call.from_user.id,
-                              'Бот сделан на Python 3 при помощи библиотеки aiogram\n'
+                              'Бот сделан на Python 3 при помощи библиотеки aiogram.\n'
                               'Распознавание речи работает на базе Google Speech Recognition.')
 
 
@@ -47,4 +47,4 @@ async def statistics_action(call: CallbackQuery):
     """
     logger.info(f'{call.from_user.id} call for about')
 
-    await dp.bot.send_message(call.from_user.id, 'Над проектом работал @Arkebuzz\n')
+    await dp.bot.send_message(call.from_user.id, 'Над проектом работал @Arkebuzz.')
