@@ -48,7 +48,7 @@ def main():
                 if file.endswith('.ogg'):
                     f_name = file[:len(file) - file[::-1].index('.') - 1]
 
-                    logger_v2t.info(f'{file + ".ogg"} start conversion')
+                    logger_v2t.info(f'{file} start conversion')
                     path = conversion('medias/input/' + f_name, '.ogg')
 
                     logger_v2t.info(f'{file} start recognition')
